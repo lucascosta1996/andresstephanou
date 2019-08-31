@@ -14,10 +14,16 @@ const ExhibitionsImagesWrapper = styled.div`
   right: 0;
   top: 0;
 
-  @media (max-width: 520px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     top: 280px;
+    padding: 50px 0 0;
     position: initial;
+  }
+
+  @media (max-width: 520px) {
+    padding: 0 20px;
+    padding-top: 40px;
   }
 
   .showLink {
@@ -25,7 +31,7 @@ const ExhibitionsImagesWrapper = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 520px) {
+    @media (max-width: 1024px) {
       padding-bottom: 30px;
     }
     
@@ -33,11 +39,21 @@ const ExhibitionsImagesWrapper = styled.div`
       margin-bottom: 15px;
       max-width: 500px;
       position: relative;
+
+      @media (max-width: 520px) {
+        max-width: 100%;
+        width: 100%;
+      }
   
       img {
         display: block;
         max-width: 400px;
         transition: all .3s ease;
+
+        @media (max-width: 520px) {
+          max-width: 100%;
+          width: 100%;
+        }
       }
   
       .hover {
