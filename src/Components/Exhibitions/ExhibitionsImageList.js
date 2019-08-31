@@ -5,46 +5,70 @@ import { exhibitionsList } from './exhibitionsList'
 
 const ExhibitionsImagesWrapper = styled.div`
   align-items: center;
+  bottom: 0;
   display: flex;
-  flex-direction: column;
-  padding-top: 8%;
+  justify-content: space-around;
+  left: 0;
+  padding: 0 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
 
-  .show {
-    margin-bottom: 30px;
-    max-width: 500px;
-    position: relative;
+  @media (max-width: 520px) {
+    flex-direction: column;
+    top: 280px;
+    position: initial;
+  }
 
-    img {
-      display: block;
-      max-width: 500px;
-      transition: all .3s ease;
+  .showLink {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 520px) {
+      padding-bottom: 30px;
     }
-
-    .title {
-      align-items: center;
-      font-family: 'Source Sans Pro', sans-serif;
-      display: flex;
-      height: 100%;
-      position:absolute;
-      top: 0;
-      transition: all .3s ease;
-      width: 100%;
-      z-index: 1;
-
-      &:hover {
-        background-color: rgba(120, 120, 120, 0.8);
-
-        span {
-          display: inline;
-          color: #fff;
-          opacity: 1;
+    
+    .show {
+      margin-bottom: 15px;
+      max-width: 500px;
+      position: relative;
+  
+      img {
+        display: block;
+        max-width: 400px;
+        transition: all .3s ease;
+      }
+  
+      .hover {
+        align-items: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        display: flex;
+        height: 100%;
+        position:absolute;
+        top: 0;
+        transition: all .3s ease;
+        width: 100%;
+        z-index: 1;
+  
+        &:hover {
+          background-color: rgba(120, 120, 120, 0.8);
         }
       }
+    }
+  }
 
-      span {
-        display: none;
-        margin: auto;
-      }
+  .showTitle {
+    color: #000;
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+    &:hover {
+      color: rgba(120, 120, 120, 0.8);
     }
   }
 `
@@ -54,15 +78,21 @@ function ExhibitionsImagesList (props) {
     <ExhibitionsImagesWrapper>
       {
         exhibitionsList.map( item => (
-          <Link
-            className="show"
-            to={`/exhibitions/${item.route}`}
-          >
-            <img src={require(`../../assets/${item.image}`)} />
-            <div className="title">
-              <span>{item.name}</span>
-            </div>
-          </Link>
+          <div className="showLink">
+            <Link
+              className="show"
+              to={`/exhibitions/${item.route}`}
+            >
+              <img src={require(`../../assets/${item.image}`)} />
+              <div className="hover" />
+            </Link>
+            <Link
+              className="showTitle"
+              to={`/exhibitions/${item.route}`}
+            > 
+              {item.name}
+            </Link>
+          </div>
         ) )
       }
     </ExhibitionsImagesWrapper>  

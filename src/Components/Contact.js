@@ -17,13 +17,18 @@ const ContactWrapper = styled.div`
     color: #000;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `
 
 function Contact( props ) {
   return (
     <ContactWrapper>
-      <a className="mail" mailto="andres@mail.com">contact@andres-stephanou.com</a>
+      <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
     </ContactWrapper>
   )
 }

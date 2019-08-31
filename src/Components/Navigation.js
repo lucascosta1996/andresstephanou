@@ -9,16 +9,18 @@ const NavigationWrapper = styled.nav`
   ${props => props.isOpened && `width: 100%; height: 200px;`}
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  padding-top: 40px;
+  position: relative;
   overflow: hidden;
   text-align: left;
-  top: 40px;
   width: 100%;
   z-index: 2;
 
   @media ( max-width: 520px ) {
     flex-direction: column;
-    left: 25px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   
   h1,
@@ -45,7 +47,7 @@ const NavigationWrapper = styled.nav`
     padding-left: 50px;
 
     @media ( max-width: 520px ) {
-      padding-left: 0;
+      padding-left: 10px;
     }
 
     a {
@@ -73,18 +75,18 @@ const NavigationWrapper = styled.nav`
 
   .close {
     position: fixed;
-    right: 35px;
-    top: 50px;
-    width: 14px;
+    right: 13px;
+    top: 30px;
+    width: 18px;
   }
 `
 
 const VeganBurguerIcon = styled.div`
   cursor: pointer;
-  font-size: 18px;
-  position: fixed;
-  right: 35px;
-  top: 43px;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 23px;
 
   @media ( min-width: 769px ) {
     display: none;
@@ -105,6 +107,10 @@ const OptionsWrapper = styled.section`
 
     &:hover {
       font-style: italic;
+    }
+
+    @media (max-width: 520px) {
+      padding-left: 8px;
     }
   }
 `

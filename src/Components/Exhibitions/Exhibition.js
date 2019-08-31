@@ -11,6 +11,11 @@ const ExhibitionWrapper = styled.div`
   text-align: center;
   top: 100px;
 
+  @media (max-width: 520px) {
+    position: initial;
+    max-width: 90%;
+  }
+
   .title {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
