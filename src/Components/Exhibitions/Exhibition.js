@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { I18nContext } from '../../i18n/index'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const ExhibitionWrapper = styled.div`
   left: 0;
@@ -31,6 +33,7 @@ const ExhibitionWrapper = styled.div`
   .images {
     max-width: 100%;
     div {
+      padding-top: 30px;
       max-width: 100%;
 
       img {
@@ -60,6 +63,16 @@ function Exhibition (props) {
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
   });
 
+  const Image = ({ image }) => (
+    <div>
+      <LazyLoadImage
+        alt={image.alt}
+        effect="blur"
+        src={require(`../../assets/exhibitions/${image.src}`)} // use normal <img> attributes as props
+      />
+    </div>
+  )
+
   return (
     <ExhibitionWrapper>
       <h2 className="title">
@@ -74,9 +87,7 @@ function Exhibition (props) {
       <div className="images">
         {
           props.show.images.map( item => (
-            <div>
-              <img src={require(`../../assets/exhibitions/${item.src}`)} />
-            </div>
+            <Image image={ item } />
           ) )
         }
       </div>

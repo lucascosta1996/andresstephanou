@@ -7,7 +7,7 @@ const ExhibitionsImagesWrapper = styled.div`
   align-items: center;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   left: 0;
   padding: 0 35px;
   position: absolute;
