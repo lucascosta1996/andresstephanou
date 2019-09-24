@@ -15,6 +15,11 @@ const NavigationWrapper = styled.nav`
   text-align: left;
   z-index: 2;
 
+  @media ( min-width: 768px ) {
+    position: fixed;
+    width: 100%;
+  }
+
   @media ( max-width: 520px ) {
     flex-direction: column;
     height: auto;
@@ -27,7 +32,7 @@ const NavigationWrapper = styled.nav`
   a {
     color: #000;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     margin: 0 8px;
     text-decoration: none;
@@ -38,7 +43,7 @@ const NavigationWrapper = styled.nav`
     }
 
     @media ( max-width: 520px ) {
-      font-size: 24px!important;
+      font-size: 18px!important;
       margin-left: 0;
     }
   }
@@ -52,6 +57,7 @@ const NavigationWrapper = styled.nav`
     }
 
     a {
+      font-size: 20px;
       margin: 0!important;
     }
   }
@@ -61,6 +67,7 @@ const NavigationWrapper = styled.nav`
   }
 
   .navigation {
+    align-items: baseline;
     display: flex;
     padding-right: 25px;
 
@@ -77,17 +84,17 @@ const NavigationWrapper = styled.nav`
   .close {
     position: fixed;
     right: 23px;
-    top: 30px;
-    width: 18px;
+    top: 24px;
+    width: 15px;
   }
 `
 
 const VeganBurguerIcon = styled.div`
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
   position: absolute;
   right: 20px;
-  top: 23px;
+  top: 18px;
 
   @media ( min-width: 520px ) {
     display: none;

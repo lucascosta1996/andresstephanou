@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { I18nContext } from '../../i18n/index'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const ExhibitionWrapper = styled.div`
   left: 0;
@@ -67,7 +66,6 @@ function Exhibition (props) {
     <div>
       <LazyLoadImage
         alt={image.alt}
-        effect="blur"
         src={require(`../../assets/exhibitions/${image.src}`)} // use normal <img> attributes as props
       />
     </div>
