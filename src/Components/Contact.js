@@ -16,7 +16,7 @@ const ContactWrapper = styled.div`
   .mail {
     color: #000;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 
     &:hover {

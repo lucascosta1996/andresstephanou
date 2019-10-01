@@ -9,6 +9,7 @@ class ExhibitionsRoutes extends Component {
     return (
       <Switch>
         <Route exact path="/exhibitions" component={ ExhibitionsImagesList }  />
+        <Route exact path="/" component={ ExhibitionsImagesList }  />
         {
           exhibitionsList.map( show => (
             <Route

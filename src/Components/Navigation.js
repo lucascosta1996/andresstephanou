@@ -32,7 +32,7 @@ const NavigationWrapper = styled.nav`
   a {
     color: #000;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin: 0 8px;
     text-decoration: none;
@@ -43,7 +43,7 @@ const NavigationWrapper = styled.nav`
     }
 
     @media ( max-width: 520px ) {
-      font-size: 18px!important;
+      font-size: 16px!important;
       margin-left: 0;
     }
   }
@@ -57,7 +57,7 @@ const NavigationWrapper = styled.nav`
     }
 
     a {
-      font-size: 20px;
+      font-size: 18px;
       margin: 0!important;
     }
   }
@@ -101,53 +101,18 @@ const VeganBurguerIcon = styled.div`
   }
 `
 
-const OptionsWrapper = styled.section`
-  span {
-    color: #000;
-    cursor: pointer;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 35px;
-    padding-right: 25px;
-    text-transform: uppercase;
-    transition: all ease .3s;
-
-    &:hover {
-      font-style: italic;
-    }
-
-    @media (max-width: 520px) {
-      padding-left: 0;
-    }
-  }
-`
-
 const Navigation = props => {
   const { translate } = useContext(I18nContext)
-  const { langCode, dispatch } = useContext(I18nContext)
   const [ active, setActive ] = useState( '' )
   const [ open, setOpen ] = useState( false )
   const isActive = ( path ) => window.location.href.indexOf( path ) > 1
-
-  const onLanguageSelect = e => {
-    return dispatch({ type: "setLanguage", payload: e.target.innerHTML })
-  }
-
-  const renderOption = code => (
-    <span
-      onClick={ ( code ) => onLanguageSelect( code ) }
-    >
-      {code}
-    </span>
-  )
 
   return (
     <NavigationWrapper
       isOpened={ open }
     >
       <h1 className="title" onClick={ () => setActive( '/' ) }>
-        <Link to="/">
+        <Link to="/index">
           { 'ANDRÉS STEPHANOU' }
         </Link>
       </h1>
@@ -166,10 +131,6 @@ const Navigation = props => {
         >
           { translate('contact') }
         </Link>
-        <OptionsWrapper>
-          {langCode === 'en' && renderOption("pt")}
-          {langCode === 'pt' && renderOption("en")}
-        </OptionsWrapper>
       </div>
       <VeganBurguerIcon
         onClick={ () => setOpen( !open ) }

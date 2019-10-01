@@ -50,6 +50,10 @@ const ExhibitionsImagesWrapper = styled.div`
         max-width: 400px;
         transition: all .3s ease;
 
+        @media (min-width: 1599px) {
+          max-width: 470px;
+        }
+
         @media (max-width: 520px) {
           max-width: 100%;
           width: 100%;

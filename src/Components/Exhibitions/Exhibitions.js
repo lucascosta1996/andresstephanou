@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import ExhibitionsRoutes from './Routes'
 
@@ -7,6 +7,9 @@ const ExhibitionsWrapper = styled.div`
 `
 
 function Exhibitions (props) {
+
+  useEffect(() => window.scrollTo(0, 0));
+
   return (
     <ExhibitionsWrapper>
       <ExhibitionsRoutes />
