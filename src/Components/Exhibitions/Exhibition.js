@@ -1,7 +1,12 @@
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { I18nContext } from '../../i18n/index'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import YouTubePlayer from 'react-player/lib/players/YouTube'
+import ReactPlayer from 'react-player'
+import play from '../../assets/exhibitions/icons/play.gif'
+import { isMobile } from '../../helpers/helpers'
 
 const ExhibitionWrapper = styled.div`
   left: 0;
@@ -9,7 +14,7 @@ const ExhibitionWrapper = styled.div`
   position: absolute;
   right: 0;
   text-align: center;
-  top: 100px;
+  top: 130px;
 
   @media (max-width: 520px) {
     position: initial;
@@ -20,7 +25,7 @@ const ExhibitionWrapper = styled.div`
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    padding-bottom: 40px; 
+    padding-bottom: 20px; 
 
     @media (max-width: 520px) {
       font-size: 18px;
@@ -34,11 +39,11 @@ const ExhibitionWrapper = styled.div`
 
     &__paragraph {
       font-family: 'Source Sans Pro', sans-serif;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       margin: auto;
       max-width: 60%;
-      padding: 6px;
+      padding: 4px;
       text-align: left;
   
       @media (max-width: 520px) {
@@ -48,9 +53,14 @@ const ExhibitionWrapper = styled.div`
     }
 
     &__pressRelease {
+      font-size: 14px;
       margin: auto;
       max-width: 60%;
       padding-top: 10px;
+
+      &__readMore {
+        display: block;
+      }
 
       a {
         color: #6278DC;
@@ -73,15 +83,6 @@ const ExhibitionWrapper = styled.div`
     @media (max-width: 520px) {
       width: 90%;
     }
-  }
-
-  .video1 {
-    margin-top: 50px;
-  }
-
-  .video2 {
-    margin-top: 30px;
-    width: 100%;
   }
 
   .images {
@@ -107,16 +108,56 @@ const ExhibitionWrapper = styled.div`
       }
     }
   }
+
+  .videoImg {
+    position: relative;
+  }
+
+  .video1 {
+    padding-top: 20px!important;
+  }
+
+  .play-icon {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    transition: .3s ease;
+    width: 80px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media (max-width: 520px) {
+      width: 40px;
+    }
+  }
+
+  .back {
+    bottom: 40px;
+    color: #000;
+    font-size: 30px;
+    left: 25px;
+    position: absolute;
+    text-decoration: none;
+  }
 `
 
 function Exhibition (props) {
+  const [ showVideo1, setShowVideo1 ] = useState(false)
+  const [ showVideo2, setShowVideo2 ] = useState(false)
   const { translate } = useContext(I18nContext)
+  const video1Ref = useRef()
+  const video2Ref = useRef()
   const firstParagraph = useRef()
   const secondParagraph = useRef()
   const thirdParagraph = useRef()
   const fourthParagraph = useRef()
   useEffect(() => {
-    window.scrollTo(0, 0)
     firstParagraph.current.innerHTML = firstParagraph.current.innerHTML
     .replace(/Sistemas e Processos/g, `<i>Sistemas e processos</i>`)
     .replace(/Organismo Digital/g, `<i>Organismo Digital</i>`)
@@ -129,21 +170,34 @@ function Exhibition (props) {
     .replace(/Partículas de Luz 3/g, `<i>Partículas de Luz 3</i>`)
     .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
-  });
+  })
+
+  const video2RefScroll = (ref) => {
+    window.scrollTo(0, ref.current.offsetTop) 
+    setShowVideo2(true)
+  }
+
+  const video1RefScroll = (ref) => {
+    window.scrollTo(0, ref.current.offsetTop) 
+    setShowVideo1(true)
+  }
 
   const Image = ({ image }) => (
-    <div>
+    <div className={ image.class ? image.class : '' }>
       <LazyLoadImage
         alt={image.alt}
-        src={require(`../../assets/exhibitions/${image.src}`)} // use normal <img> attributes as props
-      />
+        src={require(`../../assets/exhibitions/${image.src}`)}
+      /> 
+      {
+        image.class && <img className="play-icon" src={ play } />
+      }
     </div>
   )
 
   return (
     <ExhibitionWrapper>
       <h2 className="title">
-        {props.show.name}
+        {props.show.name}, {props.show.period}
       </h2>
       <section className="text">
         <p className="text__paragraph" ref={ firstParagraph }>
@@ -159,34 +213,71 @@ function Exhibition (props) {
           {translate(props.show.paragraph4)}
         </p>
         <p className="text__pressRelease">
+          <span className="text__pressRelease__readMore">{translate('readMore')}</span>
           <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelase}` }>
-            {translate('pressRelease')}
+            Andrés Stephanou: <i>{props.show.name}</i>, {props.show.period} - Galeria Palácio
           </a>
         </p>
       </section>
-      {
+      <div className="images">
+        <div ref={video1Ref}>
+        {
           props.show.video1 && (
-            <video className="video-andres video1" muted controls disablePictureInPicture controlsList="nodownload" type="video/webm">
-              <source src= { props.show.video1 } type="video/mp4" />
-              <p>Your browser does not support the video element.</p>
-            </video>
+            !showVideo1 ? (
+              <div className="video1" onClick={() => video1RefScroll(video1Ref)}>
+                <Image image={ props.show.video1image } />
+              </div>
+            ) : (
+              <div className="video1">
+                <ReactPlayer
+                  key="1"
+                  id="1"
+                  url={props.show.video1}
+                  playing
+                  controls
+                  muted
+                  quality="1080p"
+                  width='100%'
+                  height={isMobile() ? '170px' : '512px'}
+                />
+              </div>
+            )
           )
         }
-      <div className="images">
+        </div>
         {
           props.show.images.map( item => (
             <Image image={ item } />
           ) )
         }
+        <div ref={video2Ref}>
         {
           props.show.video2 && (
-            <video className="video2" muted controls disablePictureInPicture controlsList="nodownload" src={ props.show.video2 } type="video/webm">
-              <source src= { props.show.video2 } type="video/mp4" />
-              <p>Your browser does not support the video element.</p>
-            </video>
+            !showVideo2 ? (
+              <div className="video" onClick={() => video2RefScroll(video2Ref)}>
+                <Image image={ props.show.video2image } />
+              </div>
+            ) : (
+              <div className="video1">
+                <ReactPlayer
+                  key="2"
+                  id="2"
+                  url={props.show.video2}
+                  playing
+                  controls
+                  muted
+                  width='100%'
+                  height={isMobile() ? '170px' : '512px'}
+                />
+              </div>
+            )
           )
         }
+        </div>
       </div>
+      <Link to="/exhibitions" className="back">
+        {`<`}
+      </Link>
     </ExhibitionWrapper>
   )
 }

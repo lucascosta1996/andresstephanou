@@ -9,7 +9,7 @@ const NavigationWrapper = styled.nav`
   ${props => props.isOpened && `width: 100%; height: 200px;`}
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 25px;
   position: relative;
   overflow: hidden;
   text-align: left;
@@ -32,14 +32,14 @@ const NavigationWrapper = styled.nav`
   a {
     color: #000;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     margin: 0 8px;
     text-decoration: none;
     transition: .3s all ease;
 
     &:hover {
-      text-decoration: underline;
+      color: #90F7FF;
     }
 
     @media ( max-width: 520px ) {
@@ -50,24 +50,24 @@ const NavigationWrapper = styled.nav`
 
   .title {
     margin: 0!important;
-    padding-left: 50px;
+    padding-left: 25px;
 
     @media ( max-width: 520px ) {
       padding-left: 20px;
     }
 
     a {
-      font-size: 18px;
+      font-size: 16px;
       margin: 0!important;
     }
   }
 
   .active {
-    text-decoration: underline;
+    color: #90F7FF;
   }
 
   .navigation {
-    align-items: baseline;
+    align-items: flex-end;
     display: flex;
     padding-right: 25px;
 

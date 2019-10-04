@@ -8,10 +8,10 @@ const OptionsWrapper = styled.section`
     color: #000;
     cursor: pointer;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     position: fixed;
-    right: 65px;
+    right: 33px;
     text-transform: uppercase;
     transition: all ease .3s;
     z-index: 9999;

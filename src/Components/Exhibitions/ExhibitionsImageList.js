@@ -7,12 +7,20 @@ const ExhibitionsImagesWrapper = styled.div`
   align-items: center;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   left: 0;
   padding: 0 35px;
   position: absolute;
   right: 0;
   top: 0;
+
+  @media (min-width: 1024px) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1367px) {
+    justify-content: space-around;
+  }
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -50,6 +58,10 @@ const ExhibitionsImagesWrapper = styled.div`
         max-width: 400px;
         transition: all .3s ease;
 
+        @media (min-width: 1367px) {
+          max-width: 420px;
+        }
+
         @media (min-width: 1599px) {
           max-width: 470px;
         }
@@ -84,8 +96,11 @@ const ExhibitionsImagesWrapper = styled.div`
     margin: auto;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     transition: all .3s ease;
+
+    @media (max-width: 520px) {
+      font-size: 14px;
+    }
 
     &:hover {
       color: rgba(120, 120, 120, 0.8);
@@ -110,7 +125,7 @@ function ExhibitionsImagesList (props) {
               className="showTitle"
               to={`/exhibitions/${item.route}`}
             > 
-              {item.name}
+              {item.name}, {item.period}
             </Link>
           </div>
         ) )
