@@ -112,7 +112,7 @@ const Navigation = props => {
       isOpened={ open }
     >
       <h1 className="title" onClick={ () => setActive( '/' ) }>
-        <Link to="/index">
+        <Link to="/home">
           { 'ANDRÉS STEPHANOU' }
         </Link>
       </h1>

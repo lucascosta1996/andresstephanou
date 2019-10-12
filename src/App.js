@@ -14,7 +14,7 @@ function App() {
       <Route exact path="/" render={() => <Exhibitions />} />
       <Route exact path="/contact" component={Contact} />
       <Route path="/exhibitions" component={Exhibitions} />
-      <Route path="/index" render={() => {}} />
+      <Route path="/home" render={() => {}} />
     </Router>
   );
 }

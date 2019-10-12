@@ -42,6 +42,12 @@ const ExhibitionsImagesWrapper = styled.div`
     @media (max-width: 1024px) {
       padding-bottom: 30px;
     }
+
+    &:hover {
+      .showTitle {
+        color: #90F7FF;
+      }
+    }
     
     .show {
       margin-bottom: 15px;
@@ -92,7 +98,7 @@ const ExhibitionsImagesWrapper = styled.div`
 
   .showTitle {
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
     margin: auto;
     text-align: center;
     text-decoration: none;

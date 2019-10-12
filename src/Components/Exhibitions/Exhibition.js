@@ -21,9 +21,13 @@ const ExhibitionWrapper = styled.div`
     max-width: 90%;
   }
 
+  @media (min-width: 520px) {
+    padding-bottom: 100px;
+  }
+
   .title {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     padding-bottom: 20px; 
 
@@ -69,7 +73,7 @@ const ExhibitionWrapper = styled.div`
         transition: all .3s ease;
 
         &:hover {
-          color: #6278FF;
+          color: #000;
         }
       }
     }
@@ -140,10 +144,14 @@ const ExhibitionWrapper = styled.div`
   .back {
     bottom: 40px;
     color: #000;
-    font-size: 30px;
+    font-size: 14px;
     left: 25px;
     position: absolute;
     text-decoration: none;
+
+    &:hover {
+      color: #90F7FF;
+    }
   }
 `
 
@@ -183,7 +191,7 @@ function Exhibition (props) {
   }
 
   const Image = ({ image }) => (
-    <div className={ image.class ? image.class : '' }>
+    <div className={ `${image.class ? image.class : ''}` }>
       <LazyLoadImage
         alt={image.alt}
         src={require(`../../assets/exhibitions/${image.src}`)}
@@ -213,9 +221,8 @@ function Exhibition (props) {
           {translate(props.show.paragraph4)}
         </p>
         <p className="text__pressRelease">
-          <span className="text__pressRelease__readMore">{translate('readMore')}</span>
-          <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelase}` }>
-            Andrés Stephanou: <i>{props.show.name}</i>, {props.show.period} - Galeria Palácio
+          <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelease}` }>
+            {translate('pressRelease')}
           </a>
         </p>
       </section>
@@ -276,7 +283,7 @@ function Exhibition (props) {
         </div>
       </div>
       <Link to="/exhibitions" className="back">
-        {`<`}
+        {translate('back')}
       </Link>
     </ExhibitionWrapper>
   )

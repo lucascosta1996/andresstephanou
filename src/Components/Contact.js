@@ -17,6 +17,7 @@ const ContactWrapper = styled.div`
   width: 350px;
 
   .artistInfo {
+    padding-bottom: 16px;
     text-align: left;
 
     span {
@@ -25,24 +26,25 @@ const ContactWrapper = styled.div`
   }
 
   .download {
-    color: #BCBCBF;
+    color: #000;
     font-size: 14px;
     padding: 20px 0;
     text-decoration: none;
+    transition: .3s all ease;
 
     &:hover {
-      color: #000;
+      color: #90F7FF;
     }
   }
 
   .mail {
-    color: #BCBCBF;
+    color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
-    padding-left: 10px;
     text-decoration: none;
+    transition: .3s all ease;
 
     &:hover {
-      color: #000;
+      color: #90F7FF;
     }
   }
 `
@@ -60,12 +62,9 @@ function Contact( props ) {
           {translate('birth')}
         </span>
       </div>
-      <a className="download" target="_blank" href={require('../assets/downloads/Andrés Stephanou - Curriculum Vitae (PDF).pdf')}>
-        Download CV
-      </a>
       <section>
         <div>
-          {translate('info')}<a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
+          <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
         </div>
       </section>
     </ContactWrapper>

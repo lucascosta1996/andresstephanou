@@ -17,7 +17,7 @@ const OptionsWrapper = styled.section`
     z-index: 9999;
 
     &:hover {
-      font-style: italic;
+      font-weight: bold;
     }
 
     @media (max-width: 520px) {
