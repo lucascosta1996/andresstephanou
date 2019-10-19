@@ -22,7 +22,7 @@ const ExhibitionWrapper = styled.div`
   }
 
   @media (min-width: 520px) {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
 
   .title {
@@ -62,6 +62,10 @@ const ExhibitionWrapper = styled.div`
       max-width: 60%;
       padding-top: 10px;
 
+      @media (max-width: 520px) {
+        max-width: 90%;
+      }
+
       &__readMore {
         display: block;
       }
@@ -92,7 +96,7 @@ const ExhibitionWrapper = styled.div`
   .images {
     margin: auto;
     max-width: 60%;
-    padding-bottom: 120px;
+    padding-bottom: 180px;
     padding-top: 30px;
 
     @media (max-width: 520px) {
@@ -141,16 +145,24 @@ const ExhibitionWrapper = styled.div`
     }
   }
 
-  .back {
-    bottom: 40px;
-    color: #000;
-    font-size: 14px;
-    left: 25px;
-    position: absolute;
-    text-decoration: none;
+  footer {
+    position: relative;
 
-    &:hover {
-      color: #90F7FF;
+    .back {
+      bottom: 0;
+      color: #000;
+      font-size: 14px;
+      left: 25px;
+      position: absolute;
+      text-decoration: none;
+
+      @media (max-width: 520px) {
+        bottom: 40px;
+      }
+  
+      &:hover {
+        color: #90F7FF;
+      }
     }
   }
 `
@@ -167,17 +179,21 @@ function Exhibition (props) {
   const fourthParagraph = useRef()
   useEffect(() => {
     firstParagraph.current.innerHTML = firstParagraph.current.innerHTML
-    .replace(/Sistemas e Processos/g, `<i>Sistemas e processos</i>`)
-    .replace(/Organismo Digital/g, `<i>Organismo Digital</i>`)
-    .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
+    .replace(/Sistemas e Processos/g, `<i>Sistemas e Processos</i>`)
     .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
+    .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
     .replace(/Micropartículas/g, `<i>Micropartículas</i>`)
     secondParagraph.current.innerHTML = secondParagraph.current.innerHTML
+    .replace(/Partículas/g, `<i>Partículas</i>`)
+    .replace(/Sistemas e Processos/g, `<i>Sistemas e Processos</i>`)
+    .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
+    .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
+    .replace(/\(VR\)/g, `<i>(VR)</i>`)
+    thirdParagraph.current.innerHTML = thirdParagraph.current.innerHTML
     .replace(/1 minuto/g, `<i>1 minuto</i>`)
     .replace(/Partículas de Luz 3/g, `<i>Partículas de Luz 3</i>`)
-    .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
-    .replace(/\(VR\)/g, `<i>(VR)</i>`)
+    .replace(/Partículas de Luz \(VR\)/g, `<i>Partículas de luz (VR)</i>`)
   })
 
   const video2RefScroll = (ref) => {
@@ -221,7 +237,7 @@ function Exhibition (props) {
           {translate(props.show.paragraph4)}
         </p>
         <p className="text__pressRelease">
-          <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelease}` }>
+          <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelease}` } target="_blank">
             {translate('pressRelease')}
           </a>
         </p>
@@ -282,9 +298,11 @@ function Exhibition (props) {
         }
         </div>
       </div>
-      <Link to="/exhibitions" className="back">
-        {translate('back')}
-      </Link>
+      <footer>
+        <Link to="/exhibitions" className="back">
+          {translate('back')}
+        </Link>
+      </footer>
     </ExhibitionWrapper>
   )
 }

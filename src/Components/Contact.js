@@ -20,8 +20,18 @@ const ContactWrapper = styled.div`
     padding-bottom: 16px;
     text-align: left;
 
+    @media (max-width: 520px) {
+      padding-left: 15px;
+    }
+
     span {
       display: block;
+    }
+  }
+
+  section {
+    @media (max-width: 520px) {
+      padding-left: 15px;
     }
   }
 

@@ -76,6 +76,7 @@ const NavigationWrapper = styled.nav`
     }
 
     @media ( max-width: 520px ) {
+      align-items: flex-start;
       flex-direction: column;
       padding-left: 20px;
     }
@@ -83,7 +84,7 @@ const NavigationWrapper = styled.nav`
 
   .close {
     position: fixed;
-    right: 23px;
+    right: 25px;
     top: 24px;
     width: 15px;
   }
@@ -93,7 +94,7 @@ const VeganBurguerIcon = styled.div`
   cursor: pointer;
   font-size: 18px;
   position: absolute;
-  right: 20px;
+  right: 25px;
   top: 18px;
 
   @media ( min-width: 520px ) {
