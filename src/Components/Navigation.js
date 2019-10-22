@@ -59,6 +59,10 @@ const NavigationWrapper = styled.nav`
     a {
       font-size: 16px;
       margin: 0!important;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 
