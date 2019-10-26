@@ -194,8 +194,8 @@ function Exhibition (props) {
     .replace(/Partículas/g, `<i>Partículas</i>`)
     thirdParagraph.current.innerHTML = thirdParagraph.current.innerHTML
     .replace(/1 minuto/g, `<i>1 minuto</i>`)
-    .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
     .replace(/Partículas de Luz 3/g, `<i>Partículas de Luz 3</i>`)
+    .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
   })
 

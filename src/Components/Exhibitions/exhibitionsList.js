@@ -1,62 +1,62 @@
 export const exhibitionsList = [
   {
-    image: 'exhibitions/thumbnails/1-Sistemas-e-Processos-2019.png',
-    name: 'Sistemas e Processos',
+    image: 'exhibitions/thumbnails/1-Partículas-2019.png',
+    name: 'Partículas',
     paragraph1: 'sistemasp1',
     paragraph2: 'sistemasp2',
     paragraph3: 'sistemasp3',
     period: '2019',
-    route: 'sistemas-e-processos',
-    pressRelease: 'sistemas-e-processos',
+    route: 'particulas',
+    pressRelease: 'particulas',
     video1: 'https://vimeo.com/363981134',
     video1image: {
-      alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+      alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
       class: 'videoImg',
       src:'sistemas/Partículas-video-screenshot-1.png'
     },  
     images: [
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(5)-All-Rights-Reserved.png'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(1).jpg'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(2).jpg'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(3).jpg'
       },
       {
-        alt: 'Sistemas e Processos, 2019. Andrés Stephanou - Galeria Palácio',
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/1-minuto-2019-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
       }
     ]
@@ -67,6 +67,7 @@ export const exhibitionsList = [
     paragraph1: 'particulas1',
     paragraph2: 'particulas2',
     paragraph3: 'particulas3',
+    paragraph3: 'particulas4',
     period: '2018',
     route: 'particulas-de-luz',
     pressRelease: 'particulas-de-luz',
