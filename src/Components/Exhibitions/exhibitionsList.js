@@ -134,6 +134,7 @@ export const exhibitionsList = [
     image: 'exhibitions/thumbnails/3-Micropartículas-2017.png',
     name: 'Micropartículas',
     paragraph1: 'micro1',
+    paragraph2: 'micro2',
     period: '2017',
     route: 'microparticulas',
     pressRelease: 'microparticulas',

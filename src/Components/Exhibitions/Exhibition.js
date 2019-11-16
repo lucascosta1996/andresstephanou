@@ -190,6 +190,7 @@ function Exhibition (props) {
     .replace(/Sistemas e Processos/g, `<i>Sistemas e Processos</i>`)
     .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
+    .replace(/Micropartículas/g, `<i>Micropartículas</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
     .replace(/Partículas/g, `<i>Partículas</i>`)
     thirdParagraph.current.innerHTML = thirdParagraph.current.innerHTML
