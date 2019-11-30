@@ -67,7 +67,6 @@ export const exhibitionsList = [
     paragraph1: 'particulas1',
     paragraph2: 'particulas2',
     paragraph3: 'particulas3',
-    paragraph3: 'particulas4',
     period: '2018',
     route: 'particulas-de-luz',
     pressRelease: 'particulas-de-luz',
