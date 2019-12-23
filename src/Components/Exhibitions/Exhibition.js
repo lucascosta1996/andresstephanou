@@ -27,9 +27,12 @@ const ExhibitionWrapper = styled.div`
 
   .title {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
-    padding-bottom: 20px; 
+    margin: 0 auto;
+    max-width: 60%;
+    padding-bottom: 30px;
+    text-align: left;
 
     @media (max-width: 520px) {
       font-size: 18px;
@@ -71,7 +74,7 @@ const ExhibitionWrapper = styled.div`
       }
 
       a {
-        color: #6278DC;
+        color: #595959;
         text-align: left;
         text-decoration: none;
         transition: all .3s ease;
@@ -145,6 +148,17 @@ const ExhibitionWrapper = styled.div`
     }
   }
 
+  .footer1 {
+    margin: 0 auto;
+    max-width: 60%;
+    padding-top: 20px;
+    text-align: left;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
   footer {
     position: relative;
 
@@ -161,7 +175,7 @@ const ExhibitionWrapper = styled.div`
       }
   
       &:hover {
-        color: #90F7FF;
+        color: #595959;
       }
     }
   }
@@ -179,21 +193,23 @@ function Exhibition (props) {
   const fourthParagraph = useRef()
   useEffect(() => {
     firstParagraph.current.innerHTML = firstParagraph.current.innerHTML
-    .replace(/Sistemas e Processos/g, `<i>Sistemas e Processos</i>`)
-    .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
-    .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
-    .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
-    .replace(/Micropartículas/g, `<i>Micropartículas</i>`)
-    .replace(/Partículas/g, `<i>Partículas</i>`)
-    .replace(/1 minuto/g, `<i>1 minuto</i>`)
+    .replace(/Flock of Particles Swarming/g, `<i>Flock of Particles Swarming</i>`)
+    .replace(/Light Particles \(Zoom In\)/g, `<i>Light Particles (Zoom In)</i>`)
+    .replace(/Light Particles \(Zoom Out\)/g, `<i>Light Particles (Zoom Out)</i>`)
+    .replace(/Light Particles/g, `<i>Light Particles</i>`)
+    .replace(/Microparticles/g, `<i>Microparticles</i>`)
     secondParagraph.current.innerHTML = secondParagraph.current.innerHTML
-    .replace(/Sistemas e Processos/g, `<i>Sistemas e Processos</i>`)
+    .replace(/Flock of Particles Swarming/g, `<i>Flock of Particles Swarming</i>`)
+    .replace(/Light Particles \(Zoom In\)/g, `<i>Light Particles (Zoom In)</i>`)
+    .replace(/Light Particles \(Zoom Out\)/g, `<i>Light Particles (Zoom Out)</i>`)
+    .replace(/Light Particles/g, `<i>Light Particles</i>`)
     .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
     .replace(/Partículas/g, `<i>Partículas</i>`)
-    .replace(/Micropartículas/g, `<i>Micropartículas</i>`)
+    .replace(/Microparticles/g, `<i>Microparticles</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
     thirdParagraph.current.innerHTML = thirdParagraph.current.innerHTML
+    .replace(/Flock of Particles Swarming/g, `<i>Flock of Particles Swarming</i>`)
     .replace(/1 minuto/g, `<i>1 minuto</i>`)
     .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
@@ -227,7 +243,7 @@ function Exhibition (props) {
   return (
     <ExhibitionWrapper>
       <h2 className="title">
-        {props.show.name}, {props.show.period}
+        {props.show.name}
       </h2>
       <section className="text">
         <p className="text__paragraph" ref={ firstParagraph }>
@@ -303,9 +319,17 @@ function Exhibition (props) {
           )
         }
         </div>
+        <div className="footer1">
+          <p>
+            <i>{props.show.name}</i> {props.show.period}
+          </p>
+          <p>
+            Edition of 3 + AP
+          </p>
+        </div>
       </div>
       <footer>
-        <Link to="/exhibitions" className="back">
+        <Link to="/work" className="back">
           {translate('back')}
         </Link>
       </footer>

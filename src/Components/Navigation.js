@@ -9,7 +9,7 @@ const NavigationWrapper = styled.nav`
   ${props => props.isOpened && `width: 100%; height: 200px;`}
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 40px;
   position: relative;
   overflow: hidden;
   text-align: left;
@@ -39,7 +39,7 @@ const NavigationWrapper = styled.nav`
     transition: .3s all ease;
 
     &:hover {
-      color: #90F7FF;
+      color: #595959;
     }
 
     @media ( max-width: 520px ) {
@@ -49,6 +49,7 @@ const NavigationWrapper = styled.nav`
   }
 
   .title {
+    font-weight: bold;
     margin: 0!important;
     padding-left: 25px;
 
@@ -57,7 +58,8 @@ const NavigationWrapper = styled.nav`
     }
 
     a {
-      font-size: 16px;
+      font-family: 'Arimo', sans-serif;
+      font-size: 20px;
       margin: 0!important;
 
       &:hover {
@@ -67,7 +69,7 @@ const NavigationWrapper = styled.nav`
   }
 
   .active {
-    color: #90F7FF;
+    color: #595959;
   }
 
   .navigation {
@@ -117,17 +119,17 @@ const Navigation = props => {
       isOpened={ open }
     >
       <h1 className="title" onClick={ () => setActive( '/' ) }>
-        <Link to="/home">
+        <Link to="/">
           { 'ANDRÉS STEPHANOU' }
         </Link>
       </h1>
       <div className="navigation">
         <Link
-          to="/exhibitions"
-          className={ `${ isActive( 'exhibitions' ) ? 'active' : '' }` }
-          onClick={ () => { setActive( 'exhibitions' ); setOpen( false ); } }
+          to="/work"
+          className={ `${ isActive( 'work' ) ? 'active' : '' }` }
+          onClick={ () => { setActive( 'work' ); setOpen( false ); } }
         >
-          { translate('exhibitions') }
+          { translate('work') }
         </Link>
         <Link
           to="/contact"

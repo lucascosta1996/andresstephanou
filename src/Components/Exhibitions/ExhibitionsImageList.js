@@ -7,19 +7,22 @@ const ExhibitionsImagesWrapper = styled.div`
   align-items: center;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   left: 0;
   padding: 0 35px;
   position: absolute;
+  margin: 0 auto;
+  max-width: 1000px;
   right: 0;
-  top: 0;
+  top: 200px;
 
   @media (min-width: 1024px) {
     justify-content: space-between;
   }
 
   @media (min-width: 1367px) {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media (max-width: 1024px) {
@@ -38,6 +41,7 @@ const ExhibitionsImagesWrapper = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 120px;
 
     @media (max-width: 1024px) {
       padding-bottom: 30px;
@@ -98,7 +102,7 @@ const ExhibitionsImagesWrapper = styled.div`
 
   .showTitle {
     color: #000;
-    font-size: 13px;
+    font-size: 12px;
     margin: auto;
     text-align: center;
     text-decoration: none;
@@ -122,7 +126,7 @@ function ExhibitionsImagesList (props) {
           <div className="showLink">
             <Link
               className="show"
-              to={`/exhibitions/${item.route}`}
+              to={`/work/${item.route}`}
             >
               <img src={require(`../../assets/${item.image}`)} />
               <div className="hover" />
@@ -131,7 +135,7 @@ function ExhibitionsImagesList (props) {
               className="showTitle"
               to={`/exhibitions/${item.route}`}
             > 
-              {item.name}, {item.period}
+              {item.name}
             </Link>
           </div>
         ) )

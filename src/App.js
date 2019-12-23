@@ -10,10 +10,9 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <LanguageOptions />
-      <Route exact path="/" render={() => <Exhibitions />} />
+      <Route exact path="/" render={() => {}} />
       <Route exact path="/contact" component={Contact} />
-      <Route path="/exhibitions" component={Exhibitions} />
+      <Route path="/work" component={Exhibitions} />
       <Route path="/home" render={() => {}} />
     </Router>
   );
