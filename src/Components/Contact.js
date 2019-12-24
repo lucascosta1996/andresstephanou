@@ -7,6 +7,8 @@ const ContactWrapper = styled.div`
   bottom: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   justify-content: center;
   left: 0;
@@ -16,22 +18,27 @@ const ContactWrapper = styled.div`
   top: 0;
   width: 350px;
 
+  span, h2 {
+    display: block;
+    margin: 18px 0px;
+  }
+
   .artistInfo {
-    padding-bottom: 16px;
+    padding-bottom: 28px;
     text-align: left;
 
     @media (max-width: 520px) {
       padding-left: 15px;
-    }
-
-    span {
-      display: block;
     }
   }
 
   section {
     @media (max-width: 520px) {
       padding-left: 15px;
+    }
+
+    h2 {
+      font-size: inherit;
     }
   }
 
@@ -50,6 +57,7 @@ const ContactWrapper = styled.div`
   .mail {
     color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     transition: .3s all ease;
 
@@ -73,9 +81,15 @@ function Contact( props ) {
         </span>
       </div>
       <section>
+        <h2>
+          Contact
+        </h2>
         <div>
           <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
         </div>
+        <span>
+          Galeria Palácio
+        </span>
       </section>
     </ContactWrapper>
   )

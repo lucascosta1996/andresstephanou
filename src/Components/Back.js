@@ -9,6 +9,8 @@ const BackWrapper = styled.div`
 
   a {
     color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 14px!important;
     text-decoration: none;
 

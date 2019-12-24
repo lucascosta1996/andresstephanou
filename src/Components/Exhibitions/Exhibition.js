@@ -155,6 +155,8 @@ const ExhibitionWrapper = styled.div`
     text-align: left;
 
     p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
       font-size: 14px;
     }
   }

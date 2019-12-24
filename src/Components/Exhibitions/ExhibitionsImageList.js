@@ -56,6 +56,8 @@ const ExhibitionsImagesWrapper = styled.div`
     .show {
       margin-bottom: 15px;
       max-width: 580px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
       position: relative;
 
       @media (max-width: 520px) {
@@ -81,6 +83,7 @@ const ExhibitionsImagesWrapper = styled.div`
       .hover {
         align-items: center;
         font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
         display: flex;
         height: 100%;
         position:absolute;
