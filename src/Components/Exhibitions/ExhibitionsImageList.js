@@ -13,7 +13,7 @@ const ExhibitionsImagesWrapper = styled.div`
   padding: 0 35px;
   position: absolute;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1120px;
   right: 0;
   top: 200px;
 
@@ -55,7 +55,7 @@ const ExhibitionsImagesWrapper = styled.div`
     
     .show {
       margin-bottom: 15px;
-      max-width: 500px;
+      max-width: 580px;
       position: relative;
 
       @media (max-width: 520px) {
@@ -65,12 +65,8 @@ const ExhibitionsImagesWrapper = styled.div`
   
       img {
         display: block;
-        max-width: 400px;
+        max-width: 480px;
         transition: all .3s ease;
-
-        @media (min-width: 1367px) {
-          max-width: 420px;
-        }
 
         @media (min-width: 1599px) {
           max-width: 470px;

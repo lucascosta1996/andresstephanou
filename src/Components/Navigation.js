@@ -58,7 +58,7 @@ const NavigationWrapper = styled.nav`
     }
 
     a {
-      font-family: 'Arimo', sans-serif;
+      font-family: 'IBM Plex Sans', sans-serif;
       font-size: 20px;
       margin: 0!important;
 
