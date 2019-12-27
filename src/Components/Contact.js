@@ -9,7 +9,7 @@ const ContactWrapper = styled.div`
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   justify-content: center;
   left: 0;
   margin: auto;
@@ -44,25 +44,26 @@ const ContactWrapper = styled.div`
 
   .download {
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     padding: 20px 0;
     text-decoration: none;
     transition: .3s all ease;
 
     &:hover {
-      color: #90F7FF;
+      color: #595959;
     }
   }
 
   .mail {
     color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
     font-weight: 400;
     text-decoration: none;
     transition: .3s all ease;
 
     &:hover {
-      color: #90F7FF;
+      color: #595959;
     }
   }
 `
@@ -88,7 +89,7 @@ function Contact( props ) {
           <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
         </div>
         <span>
-          Galeria Palácio
+          <a className="mail" href="https://palacio.xyz" target="_blank">Galeria Palácio</a>
         </span>
       </section>
     </ContactWrapper>

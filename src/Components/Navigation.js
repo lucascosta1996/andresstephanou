@@ -60,7 +60,7 @@ const NavigationWrapper = styled.nav`
 
     a {
       font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 20px;
+      font-size: 19px;
       margin: 0!important;
 
       &:hover {

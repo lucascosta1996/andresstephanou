@@ -49,7 +49,7 @@ const ExhibitionsImagesWrapper = styled.div`
 
     &:hover {
       .showTitle {
-        color: #90F7FF;
+        color: #595959;
       }
     }
     
@@ -93,7 +93,7 @@ const ExhibitionsImagesWrapper = styled.div`
         z-index: 1;
   
         &:hover {
-          background-color: rgba(120, 120, 120, 0.8);
+          background-color: #595959;
         }
       }
     }
@@ -112,7 +112,7 @@ const ExhibitionsImagesWrapper = styled.div`
     }
 
     &:hover {
-      color: rgba(120, 120, 120, 0.8);
+      color: #595959;
     }
   }
 `

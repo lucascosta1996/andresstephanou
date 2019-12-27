@@ -217,6 +217,9 @@ function Exhibition (props) {
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
     .replace(/Partículas de Luz 3/g, `<i>Partículas de Luz 3</i>`)
     .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
+    .replace(/Light Particles \(Zoom In\)/g, `<i>Light Particles (Zoom In)</i>`)
+    .replace(/Light Particles \(Zoom Out\)/g, `<i>Light Particles (Zoom Out)</i>`)
+    .replace(/Light Particles/g, `<i>Light Particles</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
   })
 
