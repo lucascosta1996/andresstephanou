@@ -72,7 +72,7 @@ export const exhibitionsList = [
     paragraph2: 'micro2',
     period: '(2016–2017)',
     route: 'microparticles',
-    pressRelease: 'microparticulas',
+    pressRelease: 'microparticles',
     video1: 'https://vimeo.com/363972171',
     video1image: {
       alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
