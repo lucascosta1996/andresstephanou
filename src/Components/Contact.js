@@ -7,6 +7,8 @@ const ContactWrapper = styled.div`
   bottom: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   justify-content: center;
   left: 0;
@@ -16,6 +18,11 @@ const ContactWrapper = styled.div`
   top: 0;
   width: 350px;
 
+  span, h2 {
+    display: block;
+    margin: 2px 0px;
+  }
+
   .artistInfo {
     padding-bottom: 50px;
     text-align: left;
@@ -23,15 +30,15 @@ const ContactWrapper = styled.div`
     @media (max-width: 520px) {
       padding-left: 15px;
     }
-
-    span {
-      display: block;
-    }
   }
 
   section {
     @media (max-width: 520px) {
       padding-left: 15px;
+    }
+
+    h2 {
+      font-size: inherit;
     }
   }
 
@@ -54,6 +61,8 @@ const ContactWrapper = styled.div`
   .mail {
     color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
     transition: .3s all ease;
 

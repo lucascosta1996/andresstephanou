@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <Route exact path="/" render={() => {}} />
+      <Route exact path="/" component={Exhibitions} />
       <Route exact path="/contact" component={Contact} />
       <Route path="/work" component={Exhibitions} />
       <Route path="/home" render={() => {}} />

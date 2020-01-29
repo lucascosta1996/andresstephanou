@@ -9,7 +9,9 @@ const BackWrapper = styled.div`
 
   a {
     color: #000;
-    font-size: 14px!important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 13px!important;
     text-decoration: none;
 
     &:hover {

@@ -155,6 +155,8 @@ const ExhibitionWrapper = styled.div`
     text-align: left;
 
     p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
       font-size: 14px;
     }
   }
@@ -263,7 +265,7 @@ function Exhibition (props) {
           {translate(props.show.paragraph4)}
         </p>
         <p className="text__pressRelease">
-         {props.show.release !== null && (
+         {props.show.pressRelease !== 'null' && (
             <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelease}` } target="_blank">
             {translate('pressRelease')}
           </a>

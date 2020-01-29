@@ -32,6 +32,7 @@ const NavigationWrapper = styled.nav`
   a {
     color: #000;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     font-weight: 400;
     margin: 0 8px;
@@ -60,7 +61,7 @@ const NavigationWrapper = styled.nav`
 
     a {
       font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 20px;
+      font-size: 19px;
       margin: 0!important;
 
       &:hover {
