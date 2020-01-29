@@ -99,7 +99,7 @@ const ExhibitionWrapper = styled.div`
   .images {
     margin: auto;
     max-width: 60%;
-    padding-bottom: 180px;
+    padding-bottom: 150px;
     padding-top: 30px;
 
     @media (max-width: 520px) {
@@ -167,7 +167,7 @@ const ExhibitionWrapper = styled.div`
     .back {
       bottom: 0;
       color: #000;
-      font-size: 14px;
+      font-size: 13px;
       left: 25px;
       position: absolute;
       text-decoration: none;
@@ -200,6 +200,7 @@ function Exhibition (props) {
     .replace(/Light Particles \(Zoom Out\)/g, `<i>Light Particles (Zoom Out)</i>`)
     .replace(/Light Particles/g, `<i>Light Particles</i>`)
     .replace(/Microparticles/g, `<i>Microparticles</i>`)
+    .replace(/Clouding/g, `<i>Clouding</i>`)
     secondParagraph.current.innerHTML = secondParagraph.current.innerHTML
     .replace(/Flock of Particles Swarming/g, `<i>Flock of Particles Swarming</i>`)
     .replace(/Light Particles \(Zoom In\)/g, `<i>Light Particles (Zoom In)</i>`)
@@ -210,6 +211,7 @@ function Exhibition (props) {
     .replace(/Partículas/g, `<i>Partículas</i>`)
     .replace(/Microparticles/g, `<i>Microparticles</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
+    .replace(/Clouding/g, `<i>Clouding</i>`)
     thirdParagraph.current.innerHTML = thirdParagraph.current.innerHTML
     .replace(/Flock of Particles Swarming/g, `<i>Flock of Particles Swarming</i>`)
     .replace(/1 minuto/g, `<i>1 minuto</i>`)
@@ -217,7 +219,6 @@ function Exhibition (props) {
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
     .replace(/Partículas de Luz 3/g, `<i>Partículas de Luz 3</i>`)
     .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
-    .replace(/Light Particles \(Zoom In\)/g, `<i>Light Particles (Zoom In)</i>`)
     .replace(/Light Particles \(Zoom Out\)/g, `<i>Light Particles (Zoom Out)</i>`)
     .replace(/Light Particles/g, `<i>Light Particles</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
@@ -264,9 +265,11 @@ function Exhibition (props) {
           {translate(props.show.paragraph4)}
         </p>
         <p className="text__pressRelease">
-          <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelease}` } target="_blank">
+         {props.show.pressRelease !== 'null' && (
+            <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelease}` } target="_blank">
             {translate('pressRelease')}
           </a>
+         )}
         </p>
       </section>
       <div className="images">
@@ -329,7 +332,7 @@ function Exhibition (props) {
             <i>{props.show.name}</i> {props.show.period}
           </p>
           <p>
-            Edition of 3 + AP
+            Edition of 2 + AP
           </p>
         </div>
       </div>

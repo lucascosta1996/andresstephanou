@@ -13,15 +13,16 @@ const ExhibitionsImagesWrapper = styled.div`
   padding: 0 35px;
   position: absolute;
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 1360px;
   right: 0;
-  top: 200px;
+  top: 370px;
 
   @media (min-width: 1024px) {
     justify-content: space-between;
   }
 
   @media (min-width: 1367px) {
+    top: 300px;
     justify-content: space-between;
   }
 
@@ -41,7 +42,7 @@ const ExhibitionsImagesWrapper = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 
     @media (max-width: 1024px) {
       padding-bottom: 30px;
@@ -55,10 +56,12 @@ const ExhibitionsImagesWrapper = styled.div`
     
     .show {
       margin-bottom: 15px;
-      max-width: 580px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 400;
+      max-width: 650px;
       position: relative;
+
+      @media (max-width: 1368px) {
+        max-width: 600px;
+      }
 
       @media (max-width: 520px) {
         max-width: 100%;
@@ -67,8 +70,12 @@ const ExhibitionsImagesWrapper = styled.div`
   
       img {
         display: block;
-        max-width: 480px;
+        max-width: 100%;
         transition: all .3s ease;
+
+        @media (min-width: 1367px) {
+          max-width: 100%;
+        }
 
         @media (min-width: 1599px) {
           max-width: 470px;
@@ -79,21 +86,49 @@ const ExhibitionsImagesWrapper = styled.div`
           width: 100%;
         }
       }
-  
+
       .hover {
-        align-items: center;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 400;
-        display: flex;
-        height: 100%;
-        position:absolute;
-        top: 0;
-        transition: all .3s ease;
+        opacity: 0;
+        position: absolute;
+        z-index: 0;
+      }
+
+      &:before {
+        background-color: rgba(0,0,0, 0.4);
+        content: '';
+        position: absolute;
         width: 100%;
-        z-index: 1;
+        height: 100%;
+        transition: all .3s ease;
+        z-index: -1;
+      }
   
-        &:hover {
-          background-color: #595959;
+      &:hover {
+        &:before {
+          background-color: rgba(0,0,0, 0.4);
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease;
+          z-index: 1;
+        }
+
+        .hover {
+          color: #FFF;
+          font-family: 'Source Sans Pro',sans-serif;
+          height: max-content;
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: auto;
+          bottom: 0;
+          right: 0;
+          transition: all .3s ease;
+          width: 100%;
+          opacity: 1;
+          text-align: center;
+          z-index: 2;
         }
       }
     }
@@ -128,13 +163,7 @@ function ExhibitionsImagesList (props) {
               to={`/work/${item.route}`}
             >
               <img src={require(`../../assets/${item.image}`)} />
-              <div className="hover" />
-            </Link>
-            <Link
-              className="showTitle"
-              to={`/exhibitions/${item.route}`}
-            > 
-              {item.name}
+              <div className="hover">{item.name}</div>
             </Link>
           </div>
         ) )

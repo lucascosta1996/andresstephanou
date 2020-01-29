@@ -9,7 +9,7 @@ const ContactWrapper = styled.div`
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   justify-content: center;
   left: 0;
   margin: auto;
@@ -20,11 +20,11 @@ const ContactWrapper = styled.div`
 
   span, h2 {
     display: block;
-    margin: 18px 0px;
+    margin: 2px 0px;
   }
 
   .artistInfo {
-    padding-bottom: 28px;
+    padding-bottom: 50px;
     text-align: left;
 
     @media (max-width: 520px) {
@@ -42,9 +42,13 @@ const ContactWrapper = styled.div`
     }
   }
 
+  b {
+    font-size: 14px;
+  }
+
   .download {
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     padding: 20px 0;
     text-decoration: none;
     transition: .3s all ease;
@@ -57,7 +61,7 @@ const ContactWrapper = styled.div`
   .mail {
     color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     text-decoration: none;
     transition: .3s all ease;
@@ -65,6 +69,11 @@ const ContactWrapper = styled.div`
     &:hover {
       color: #595959;
     }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
   }
 `
 
@@ -82,15 +91,11 @@ function Contact( props ) {
         </span>
       </div>
       <section>
-        <h2>
-          Contact
-        </h2>
-        <div>
+        <div className="flex">
+          <b>{translate('contact')}</b>
           <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
+          <a className="mail" href="https://palacio.xyz">Galeria Palácio</a>
         </div>
-        <span>
-          <a className="mail" href="https://palacio.xyz" target="_blank">Galeria Palácio</a>
-        </span>
       </section>
     </ContactWrapper>
   )
