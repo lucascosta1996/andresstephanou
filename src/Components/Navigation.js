@@ -9,7 +9,7 @@ const NavigationWrapper = styled.nav`
   ${props => props.isOpened && `width: 100%; height: 200px;`}
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 30px;
   position: relative;
   overflow: hidden;
   text-align: left;
@@ -49,6 +49,7 @@ const NavigationWrapper = styled.nav`
   }
 
   .title {
+    font-size: 19px;
     font-weight: bold;
     margin: 0!important;
     padding-left: 25px;
@@ -58,7 +59,7 @@ const NavigationWrapper = styled.nav`
     }
 
     a {
-      font-family: 'Arimo', sans-serif;
+      font-family: 'IBM Plex Sans', sans-serif;
       font-size: 20px;
       margin: 0!important;
 
@@ -119,7 +120,7 @@ const Navigation = props => {
       isOpened={ open }
     >
       <h1 className="title" onClick={ () => setActive( '/' ) }>
-        <Link to="/">
+        <Link to="/work">
           { 'ANDRÉS STEPHANOU' }
         </Link>
       </h1>
@@ -136,7 +137,7 @@ const Navigation = props => {
           className={ `${isActive( 'contact' ) ? 'active' : ''}` }
           onClick={ () => { setActive( 'contact' ); setOpen( false ); } }
         >
-          { translate('contact') }
+          { translate('about') }
         </Link>
       </div>
       <VeganBurguerIcon

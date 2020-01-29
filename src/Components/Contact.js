@@ -17,7 +17,7 @@ const ContactWrapper = styled.div`
   width: 350px;
 
   .artistInfo {
-    padding-bottom: 16px;
+    padding-bottom: 50px;
     text-align: left;
 
     @media (max-width: 520px) {
@@ -35,6 +35,10 @@ const ContactWrapper = styled.div`
     }
   }
 
+  b {
+    font-size: 14px;
+  }
+
   .download {
     color: #000;
     font-size: 14px;
@@ -43,7 +47,7 @@ const ContactWrapper = styled.div`
     transition: .3s all ease;
 
     &:hover {
-      color: #90F7FF;
+      color: #595959;
     }
   }
 
@@ -54,8 +58,13 @@ const ContactWrapper = styled.div`
     transition: .3s all ease;
 
     &:hover {
-      color: #90F7FF;
+      color: #595959;
     }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
   }
 `
 
@@ -73,8 +82,10 @@ function Contact( props ) {
         </span>
       </div>
       <section>
-        <div>
+        <div className="flex">
+          <b>{translate('contact')}</b>
           <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
+          <a className="mail" href="https://palacio.xyz">Galeria Palácio</a>
         </div>
       </section>
     </ContactWrapper>

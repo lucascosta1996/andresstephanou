@@ -17,69 +17,71 @@ export const exhibitionsList = [
     images: [
       {
         alt: 'Flock of Particles Swarming. Andrés Stephanou - Galeria Palácio',
-        src: 'sistemas/Flock-of-Particles-Swarming-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
-      },
-      {
-        alt: 'Flock of Particles Swarming. Andrés Stephanou - Galeria Palácio',
-        src: 'sistemas/Flock-of-Particles-Swarming-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
-      },
-      {
-        alt: 'Flock of Particles Swarming. Andrés Stephanou - Galeria Palácio',
-        src: 'sistemas/Flock-of-Particles-Swarming-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png'
+        src: 'sistemas/Flock-of-Particles-Swarming-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved (1).png'
       }
     ]
   },
   {
-    image: 'exhibitions/thumbnails/2-Partículas-de-Luz-2018.png',
-    name: 'Lights Particles (Zoom In)',
+    image: 'exhibitions/cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-rights-reserved.png',
+    name: 'Clouding',
+    paragraph1: 'cloudingp1',
+    paragraph2: 'cloudingp2',
+    period: '(2018–2019)',
+    route: 'clouding',
+    video1: 'https://vimeo.com/387718994',
+    video1image: {
+      alt: 'Clouding. Andrés Stephanou',
+      class: 'videoImg',
+      src:'cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.png'
+    },  
+    images: [
+      {
+        alt: 'Clouding. Andrés Stephanou',
+        src: 'cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.png'
+      }
+    ]
+  },
+  {
+    image: 'exhibitions/luz/Light-Particles-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
+    name: 'Lights Particles',
     paragraph1: 'particleszoomp1',
     paragraph2: 'particleszoomp2',
+    paragraph3: 'particleszoomp3',
     period: '(2017–2018)',
-    route: 'light-particles-zoom-in',
-    pressRelease: 'light-particles-zoom-in',
+    route: 'light-particles',
+    pressRelease: 'light-particles',
     video1: 'https://vimeo.com/363977985',
     video1image: {
-      alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
+      alt: 'Lights Particles, 2018. Andrés Stephanou - Galeria Palácio',
       class: 'videoImg',
       src:'luz/luz-1-video.png'
     },
     images: [
       {
-        alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
-        src: 'luz/Light-Particles-(Zoom-In)-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
-      },
-      {
-        alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
-        src: 'luz/Light-Particles-(Zoom-In)-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
-      },
-      {
-        alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
-        src: 'luz/Light-Particles-(Zoom-In)-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png'
-      },
+        alt: 'Lights Particles, 2018. Andrés Stephanou - Galeria Palácio',
+        src: 'luz/Light-Particles-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved (1).png'
+      }
     ] 
   },
   {
-    image: 'exhibitions/thumbnails/2-Partículas-de-Luz-2018.png',
+    image: 'exhibitions/luz/Light-Particles-(Zoom-Out)-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png',
     name: 'Lights Particles (Zoom Out)',
     paragraph1: 'particlesp1',
     paragraph2: 'particlesp2',
+    paragraph3: 'particlesp3',
     period: '(2017–2018)',
     route: 'light-particles-zoom-out',
-    pressRelease: 'light-particles-zoom-out',
+    pressRelease: 'light-particles',
     video1: 'https://vimeo.com/363976895',
     video1image: {
-      alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
+      alt: 'Lights Particles, 2018. Andrés Stephanou - Galeria Palácio',
       class: 'videoImg',
       src:'luz/luz-2-video.png'
     },
     images: [
       {
-        alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
+        alt: 'Lights Particles, 2018. Andrés Stephanou - Galeria Palácio',
         src: 'luz/Light-Particles-(Zoom-Out)-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
-      },
-      {
-        alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
-        src: 'luz/Light-Particles-(Zoom-Out)-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
       }
     ] 
   },
@@ -101,14 +103,6 @@ export const exhibitionsList = [
       {
         alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
         src: 'microparticulas/Microparticles-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
-      },
-      {
-        alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
-        src: 'microparticulas/Microparticles-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
-      },
-      {
-        alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
-        src: 'microparticulas/Microparticles-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
       }
     ]
   }
