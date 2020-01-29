@@ -15,7 +15,7 @@ const ExhibitionsImagesWrapper = styled.div`
   margin: 0 auto;
   max-width: 1360px;
   right: 0;
-  top: 370px;
+  top: 355px;
 
   @media (min-width: 1024px) {
     justify-content: space-between;
@@ -73,13 +73,14 @@ const ExhibitionsImagesWrapper = styled.div`
         max-width: 100%;
         transition: all .3s ease;
 
+        @media (min-width: 1599px) {
+          max-width: 470px;
+        }
+
         @media (min-width: 1367px) {
           max-width: 100%;
         }
 
-        @media (min-width: 1599px) {
-          max-width: 470px;
-        }
 
         @media (max-width: 520px) {
           max-width: 100%;

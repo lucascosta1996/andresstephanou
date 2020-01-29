@@ -134,7 +134,7 @@ const Navigation = props => {
           { translate('work') }
         </Link>
         <Link
-          to="/contact"
+          to="/about"
           className={ `${isActive( 'contact' ) ? 'active' : ''}` }
           onClick={ () => { setActive( 'contact' ); setOpen( false ); } }
         >
