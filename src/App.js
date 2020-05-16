@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Navigation />
       <Route exact path="/" component={Exhibitions} />
-      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/about" component={Contact} />
       <Route path="/work" component={Exhibitions} />
       <Route path="/home" render={() => {}} />
     </Router>
