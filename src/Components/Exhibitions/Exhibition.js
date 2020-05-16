@@ -27,7 +27,7 @@ const ExhibitionWrapper = styled.div`
 
   .title {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     margin: 0 auto;
     max-width: 60%;
@@ -145,40 +145,6 @@ const ExhibitionWrapper = styled.div`
 
     @media (max-width: 520px) {
       width: 40px;
-    }
-  }
-
-  .footer1 {
-    margin: 0 auto;
-    max-width: 60%;
-    padding-top: 20px;
-    text-align: left;
-
-    p {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-    }
-  }
-
-  footer {
-    position: relative;
-
-    .back {
-      bottom: 0;
-      color: #000;
-      font-size: 13px;
-      left: 25px;
-      position: absolute;
-      text-decoration: none;
-
-      @media (max-width: 520px) {
-        bottom: 40px;
-      }
-  
-      &:hover {
-        color: #595959;
-      }
     }
   }
 `
@@ -327,20 +293,7 @@ function Exhibition (props) {
           )
         }
         </div>
-        <div className="footer1">
-          <p>
-            <i>{props.show.name}</i> {props.show.period}
-          </p>
-          <p>
-            Edition of 2 + AP
-          </p>
-        </div>
       </div>
-      <footer>
-        <Link to="/work" className="back">
-          {translate('back')}
-        </Link>
-      </footer>
     </ExhibitionWrapper>
   )
 }
