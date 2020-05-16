@@ -44,6 +44,7 @@ const ContactWrapper = styled.div`
 
   b {
     font-size: 14px;
+    margin-bottom: 14px;
   }
 
   .download {
