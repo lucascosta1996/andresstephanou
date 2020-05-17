@@ -1,6 +1,6 @@
 export const exhibitionsList = [
   {
-    image: 'exhibitions/thumbnails/1-Partículas-2019.png',
+    image: 'exhibitions/thumbnails/Collective-Motion-2018-19-Andrés-Stephanou-Screenshot-(7)-All-Rights-Reserved.png',
     name: 'Collective Motion',
     paragraph1: 'collectivep1',
     paragraph2: 'collectivep2',
@@ -44,7 +44,7 @@ export const exhibitionsList = [
     ]
   },
   {
-    image: 'exhibitions/cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-rights-reserved.png',
+    image: 'exhibitions/thumbnails/Smoke-2018-20-Andrés-Stephanou-Screenshot-(5)-All-Rights-Reserved.png',
     name: 'Smoke',
     paragraph1: 'smokep1',
     paragraph2: 'smokep2',

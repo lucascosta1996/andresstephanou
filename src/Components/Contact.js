@@ -42,11 +42,6 @@ const ContactWrapper = styled.div`
     }
   }
 
-  b {
-    font-size: 14px;
-    margin-bottom: 14px;
-  }
-
   .download {
     color: #000;
     font-size: 14px;
@@ -93,9 +88,7 @@ function Contact( props ) {
       </div>
       <section>
         <div className="flex">
-          <b>{translate('contact')}</b>
           <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
-          <a className="mail" href="https://palacio.xyz">Galeria Palácio</a>
         </div>
       </section>
     </ContactWrapper>

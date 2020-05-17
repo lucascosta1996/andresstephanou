@@ -11,6 +11,7 @@ const ExhibitionsImagesWrapper = styled.div`
   flex-wrap: wrap;
   left: 0;
   padding: 0 35px;
+  padding-bottom: 355px;
   position: absolute;
   margin: 0 auto;
   max-width: 1360px;
