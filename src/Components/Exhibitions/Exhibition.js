@@ -191,6 +191,9 @@ function Exhibition (props) {
     .replace(/Smoke/g, `<i>Smoke</i>`)
     .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
     .replace(/Pattern Formation/g, `<i>Pattern Formation</i>`)
+    fourthParagraph.current.innerHTML = fourthParagraph.current.innerHTML
+    .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
+    .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
   })
 
   const video2RefScroll = (ref) => {
