@@ -16,7 +16,7 @@ const ContactWrapper = styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  width: 350px;
+  width: 250px;
 
   span, h2 {
     display: block;
