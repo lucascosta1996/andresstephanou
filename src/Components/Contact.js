@@ -24,7 +24,7 @@ const ContactWrapper = styled.div`
   }
 
   .artistInfo {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     text-align: left;
 
     @media (max-width: 520px) {
