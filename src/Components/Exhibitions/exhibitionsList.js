@@ -176,5 +176,49 @@ export const exhibitionsList = [
         src: 'pattern/Pattern-Formation-2015-17-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
       }
     ]
+  },
+  {
+    image: 'exhibitions/network/Network-Paths-2015-19-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
+    name: 'Network Paths',
+    paragraph1: 'networkp1',
+    paragraph2: 'networkp2',
+    paragraph3: 'networkp3',
+    period: '(2015-19)',
+    route: 'network-paths',
+    pressRelease: 'null',
+    video1: 'https://vimeo.com/428869522',
+    video1image: {
+      alt: 'Network Paths, 2019. Andrés Stephanou',
+      class: 'videoImg',
+      src:'network/Network-Paths-2015-19-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
+    },  
+    images: [
+      {
+        alt: 'Network Paths, 2019. Andrés Stephanou',
+        src: 'network/Network-Paths-2015-19-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
+      }
+    ]
+  },
+  {
+    image: 'exhibitions/colonies/Colonies-2015-19-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
+    name: 'Network Paths',
+    paragraph1: 'coloniesp1',
+    paragraph2: 'coloniesp2',
+    paragraph3: 'coloniesp3',
+    period: '(2015-19)',
+    route: 'colonies',
+    pressRelease: 'null',
+    video1: 'https://vimeo.com/428864930',
+    video1image: {
+      alt: 'Colonies, 2015-19. Andrés Stephanou',
+      class: 'videoImg',
+      src:'colonies/Colonies-2015-19-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
+    },  
+    images: [
+      {
+        alt: 'Colonies, 2015-19. Andrés Stephanou',
+        src: 'colonies/Colonies-2015-19-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
+      }
+    ]
   }
 ]

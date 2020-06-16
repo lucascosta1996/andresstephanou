@@ -169,6 +169,8 @@ function Exhibition (props) {
     .replace(/Dark Smoke/g, `<i>Dark Smoke</i>`)
     .replace(/Smoke/g, `<i>Smoke</i>`)
     .replace(/Bifurcation/g, `<i>Bifurcation</i>`)
+    .replace(/Colonies/g, `<i>Colonies</i>`)
+    .replace(/Network Paths/g, `<i>Network Paths</i>`)
     .replace(/Pattern Formation/g, `<i>Pattern Formation</i>`)
     secondParagraph.current.innerHTML = secondParagraph.current.innerHTML
     .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
@@ -180,7 +182,8 @@ function Exhibition (props) {
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
     .replace(/Dark Smoke/g, `<i>Dark Smoke</i>`)
     .replace(/Smoke/g, `<i>Smoke</i>`)
-    .replace(/Bifurcation/g, `<i>Bifurcation</i>`)
+    .replace(/Bifurcation/g, `<i>Bifurcation</i>`).replace(/Colonies/g, `<i>Colonies</i>`)
+    .replace(/Network Paths/g, `<i>Network Paths</i>`)
     thirdParagraph.current.innerHTML = thirdParagraph.current.innerHTML
     .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
     .replace(/Bifurcation/g, `<i>Bifurcation</i>`)
@@ -190,7 +193,8 @@ function Exhibition (props) {
     .replace(/Dark Smoke/g, `<i>Dark Smoke</i>`)
     .replace(/Smoke/g, `<i>Smoke</i>`)
     .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
-    .replace(/Pattern Formation/g, `<i>Pattern Formation</i>`)
+    .replace(/Pattern Formation/g, `<i>Pattern Formation</i>`).replace(/Colonies/g, `<i>Colonies</i>`)
+    .replace(/Network Paths/g, `<i>Network Paths</i>`)
     fourthParagraph.current.innerHTML = fourthParagraph.current.innerHTML
     .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
     .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
