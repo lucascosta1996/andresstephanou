@@ -158,8 +158,8 @@ function ExhibitionsImagesList (props) {
   return (
     <ExhibitionsImagesWrapper>
       {
-        exhibitionsList.map( item => (
-          <div className="showLink">
+        exhibitionsList.map( ( item, index ) => (
+          <div className="showLink" key={`index_${item.name}_${index}`}>
             <Link
               className="show"
               to={`/work/${item.route}`}
