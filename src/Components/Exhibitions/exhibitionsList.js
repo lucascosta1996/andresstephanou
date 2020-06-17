@@ -201,7 +201,7 @@ export const exhibitionsList = [
   },
   {
     image: 'exhibitions/colonies/Colonies-2015-19-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
-    name: 'Network Paths',
+    name: 'Colonies',
     paragraph1: 'coloniesp1',
     paragraph2: 'coloniesp2',
     paragraph3: 'coloniesp3',
