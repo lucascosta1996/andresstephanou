@@ -242,7 +242,7 @@ function Exhibition (props) {
         </p>
         <p className="text__pressRelease">
          {props.show.pressRelease !== 'null' && (
-            <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelease}` } target="_blank">
+            <a href={ `https://galeriapalacio.com/exhibitions/${props.show.pressRelease}` } target="_blank">
             {translate('pressRelease')}
           </a>
          )}
