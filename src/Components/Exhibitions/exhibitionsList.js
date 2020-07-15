@@ -19,6 +19,10 @@ export const exhibitionsList = [
       {
         alt: 'Flock of Particles Swarming. Andrés Stephanou - Galeria Palácio',
         src: 'sistemas/Flock-of-Particles-Swarming-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved (1).png'
+      },
+      {
+        alt: 'Flock of Particles Swarming. Andrés Stephanou - Galeria Palácio',
+        src: 'sistemas/Collective-Motion-2018-19-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg'
       }
     ]
   },
@@ -84,7 +88,11 @@ export const exhibitionsList = [
     images: [
       {
         alt: 'Individual Bodies Self-Organizing, 2018. Andrés Stephanou - Galeria Palácio',
-        src: 'luz/Light-Particles-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved (1).png'
+        src: 'luz/Individual-Bodies-Self-Organizing-2017-18-Andrés-Stephanou-Screenshot-(3).png'
+      },
+      {
+        alt: 'Individual Bodies Self-Organizing, 2018. Andrés Stephanou - Galeria Palácio',
+        src: 'luz/Individual-Bodies-Self-Organizing-2017-18-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
       }
     ] 
   },
@@ -152,6 +160,10 @@ export const exhibitionsList = [
       {
         alt: 'Particles Within a Space, 2017. Andrés Stephanou - Galeria Palácio',
         src: 'microparticulas/Microparticles-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
+      },
+      {
+        alt: 'Particles Within a Space, 2017. Andrés Stephanou - Galeria Palácio',
+        src: 'microparticulas/Particles-Within-a-Space-2016-17-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
       }
     ]
   },
