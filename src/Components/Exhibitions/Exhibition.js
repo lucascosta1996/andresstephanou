@@ -26,8 +26,8 @@ const ExhibitionWrapper = styled.div`
   }
 
   .title {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
     font-weight: 300;
     margin: 0 auto;
     max-width: 60%;
@@ -162,42 +162,48 @@ function Exhibition (props) {
   useEffect(() => {
     firstParagraph.current.innerHTML = firstParagraph.current.innerHTML
     .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
-    .replace(/Individual Bodies Self-Organizing \(Zoom In\)/g, `<i>Individual Bodies Self-Organizing (Zoom In)</i>`)
-    .replace(/Individual Bodies Self-Organizing \(Zoom Out\)/g, `<i>Individual Bodies Self-Organizing (Zoom Out)</i>`)
-    .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
-    .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
+    .replace(/Growth and Decay \(Zoom In\)/g, `<i>Growth and Decay (Zoom In)</i>`)
+    .replace(/Growth and Decay \(Zoom Out\)/g, `<i>Growth and Decay (Zoom Out)</i>`)
+    .replace(/Growth and Decay/g, `<i>Growth and Decay</i>`)
+    .replace(/Chaos/g, `<i>Chaos</i>`)
     .replace(/Dark Smoke/g, `<i>Dark Smoke</i>`)
     .replace(/Smoke/g, `<i>Smoke</i>`)
     .replace(/Bifurcation/g, `<i>Bifurcation</i>`)
     .replace(/Colonies/g, `<i>Colonies</i>`)
-    .replace(/Network Paths/g, `<i>Network Paths</i>`)
-    .replace(/Pattern Formation/g, `<i>Pattern Formation</i>`)
+    .replace(/Network/g, `<i>Network</i>`)
+    .replace(/Particles/g, `<i>Particles</i>`)
+    .replace(/Swarming \(Zoom Out\)/g, `<i>Swarming (Zoom Out)</i>`)
+    .replace(/Swarming/g, `<i>Swarming</i>`)
     secondParagraph.current.innerHTML = secondParagraph.current.innerHTML
     .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
-    .replace(/Individual Bodies Self-Organizing \(Zoom In\)/g, `<i>Individual Bodies Self-Organizing (Zoom In)</i>`)
-    .replace(/Individual Bodies Self-Organizing \(Zoom Out\)/g, `<i>Individual Bodies Self-Organizing (Zoom Out)</i>`)
-    .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
-    .replace(/Pattern Formation/g, `<i>Pattern Formation</i>`)
-    .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
+    .replace(/Growth and Decay \(Zoom In\)/g, `<i>Growth and Decay (Zoom In)</i>`)
+    .replace(/Growth and Decay \(Zoom Out\)/g, `<i>Growth and Decay (Zoom Out)</i>`)
+    .replace(/Growth and Decay/g, `<i>Growth and Decay</i>`)
+    .replace(/Particles/g, `<i>Particles</i>`)
+    .replace(/Chaos/g, `<i>Chaos</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
     .replace(/Dark Smoke/g, `<i>Dark Smoke</i>`)
     .replace(/Smoke/g, `<i>Smoke</i>`)
     .replace(/Bifurcation/g, `<i>Bifurcation</i>`).replace(/Colonies/g, `<i>Colonies</i>`)
-    .replace(/Network Paths/g, `<i>Network Paths</i>`)
+    .replace(/Network/g, `<i>Network</i>`)
+    .replace(/Swarming \(Zoom Out\)/g, `<i>Swarming (Zoom Out)</i>`)
+    .replace(/Swarming/g, `<i>Swarming</i>`)
     thirdParagraph.current.innerHTML = thirdParagraph.current.innerHTML
     .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
     .replace(/Bifurcation/g, `<i>Bifurcation</i>`)
-    .replace(/Individual Bodies Self-Organizing \(Zoom Out\)/g, `<i>Individual Bodies Self-Organizing (Zoom Out)</i>`)
-    .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
+    .replace(/Growth and Decay \(Zoom Out\)/g, `<i>Growth and Decay (Zoom Out)</i>`)
+    .replace(/Growth and Decay/g, `<i>Growth and Decay</i>`)
     .replace(/\(VR\)/g, `<i>(VR)</i>`)
     .replace(/Dark Smoke/g, `<i>Dark Smoke</i>`)
     .replace(/Smoke/g, `<i>Smoke</i>`)
-    .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
-    .replace(/Pattern Formation/g, `<i>Pattern Formation</i>`).replace(/Colonies/g, `<i>Colonies</i>`)
-    .replace(/Network Paths/g, `<i>Network Paths</i>`)
+    .replace(/Chaos/g, `<i>Chaos</i>`)
+    .replace(/Particles/g, `<i>Particles</i>`).replace(/Colonies/g, `<i>Colonies</i>`)
+    .replace(/Network/g, `<i>Network</i>`)
+    .replace(/Swarming \(Zoom Out\)/g, `<i>Swarming (Zoom Out)</i>`)
+    .replace(/Swarming/g, `<i>Swarming</i>`)
     fourthParagraph.current.innerHTML = fourthParagraph.current.innerHTML
     .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
-    .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
+    .replace(/Chaos/g, `<i>Chaos</i>`)
   })
 
   const video2RefScroll = (ref) => {

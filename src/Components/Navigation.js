@@ -31,9 +31,9 @@ const NavigationWrapper = styled.nav`
   h1,
   a {
     color: #000;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     margin: 0 8px;
     text-decoration: none;
@@ -60,8 +60,8 @@ const NavigationWrapper = styled.nav`
     }
 
     a {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 19px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 16px;
       margin: 0!important;
 
       &:hover {

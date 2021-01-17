@@ -27,6 +27,32 @@ export const exhibitionsList = [
     ]
   },
   {
+    image: 'exhibitions/thumbnails/Smoke-2018-20-Andrés-Stephanou-Screenshot-(5)-All-Rights-Reserved.png',
+    name: 'Smoke',
+    paragraph1: 'smokep1',
+    paragraph2: 'smokep2',
+    paragraph3: 'smokep3',
+    period: '(2018–2019)',
+    route: 'smoke',
+    pressRelease: 'smoke',
+    video1: 'https://vimeo.com/387718994',
+    video1image: {
+      alt: 'Smoke. Andrés Stephanou',
+      class: 'videoImg',
+      src:'cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.png'
+    },  
+    images: [
+      {
+        alt: 'Smoke. Andrés Stephanou',
+        src: 'cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.png'
+      },
+      {
+        alt: 'Smoke. Andrés Stephanou',
+        src: 'cloud/Smoke-2018-20-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
+      }
+    ]
+  },
+  {
     image: 'exhibitions/thumbnails/Dark-Smoke-2018-20-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
     name: 'Dark Smoke',
     paragraph1: 'darksmokep1',
@@ -49,30 +75,8 @@ export const exhibitionsList = [
     ]
   },
   {
-    image: 'exhibitions/thumbnails/Smoke-2018-20-Andrés-Stephanou-Screenshot-(5)-All-Rights-Reserved.png',
-    name: 'Smoke',
-    paragraph1: 'smokep1',
-    paragraph2: 'smokep2',
-    paragraph3: 'smokep3',
-    period: '(2018–2019)',
-    route: 'smoke',
-    pressRelease: 'null',
-    video1: 'https://vimeo.com/387718994',
-    video1image: {
-      alt: 'Smoke. Andrés Stephanou',
-      class: 'videoImg',
-      src:'cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.png'
-    },  
-    images: [
-      {
-        alt: 'Clouding. Andrés Stephanou',
-        src: 'cloud/Clouding-2018-2019-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.png'
-      }
-    ]
-  },
-  {
     image: 'exhibitions/luz/Light-Particles-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
-    name: 'Individual Bodies Self-Organizing',
+    name: 'Growth and Decay',
     paragraph1: 'individualsp1',
     paragraph2: 'individualsp2',
     paragraph3: 'individualsp3',
@@ -81,24 +85,24 @@ export const exhibitionsList = [
     pressRelease: 'individual-bodies-self-organizing',
     video1: 'https://vimeo.com/363977985',
     video1image: {
-      alt: 'Individual Bodies Self-Organizing, 2018. Andrés Stephanou - Galeria Palácio',
+      alt: 'Growth and Decay, 2018. Andrés Stephanou - Galeria Palácio',
       class: 'videoImg',
       src:'luz/luz-1-video.png'
     },
     images: [
       {
-        alt: 'Individual Bodies Self-Organizing, 2018. Andrés Stephanou - Galeria Palácio',
+        alt: 'Growth and Decay, 2018. Andrés Stephanou - Galeria Palácio',
         src: 'luz/Individual-Bodies-Self-Organizing-2017-18-Andrés-Stephanou-Screenshot-(3).png'
       },
       {
-        alt: 'Individual Bodies Self-Organizing, 2018. Andrés Stephanou - Galeria Palácio',
+        alt: 'Growth and Decay, 2018. Andrés Stephanou - Galeria Palácio',
         src: 'luz/Individual-Bodies-Self-Organizing-2017-18-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
       }
     ] 
   },
   {
     image: 'exhibitions/luz/Light-Particles-(Zoom-Out)-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png',
-    name: 'Individual Bodies Self-Organizing (Zoom Out)',
+    name: 'Growth and Decay (Zoom Out)',
     paragraph1: 'individualszoomp1',
     paragraph2: 'individualszoomp2',
     paragraph3: 'individualszoomp3',
@@ -107,13 +111,13 @@ export const exhibitionsList = [
     pressRelease: 'null',
     video1: 'https://vimeo.com/363976895',
     video1image: {
-      alt: 'Individual Bodies Self-Organizing, 2018. Andrés Stephanou - Galeria Palácio',
+      alt: 'Growth and Decay, 2018. Andrés Stephanou - Galeria Palácio',
       class: 'videoImg',
       src:'luz/luz-2-video.png'
     },
     images: [
       {
-        alt: 'Individual Bodies Self-Organizing, 2018. Andrés Stephanou - Galeria Palácio',
+        alt: 'Growth and Decay, 2018. Andrés Stephanou - Galeria Palácio',
         src: 'luz/Light-Particles-(Zoom-Out)-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
       }
     ] 
@@ -142,7 +146,7 @@ export const exhibitionsList = [
   },
   {
     image: 'exhibitions/thumbnails/3-Micropartículas-2017.png',
-    name: 'Particles Within a Space',
+    name: 'Chaos',
     paragraph1: 'micro1',
     paragraph2: 'micro2',
     paragraph3: 'micro3',
@@ -152,24 +156,24 @@ export const exhibitionsList = [
     pressRelease: 'particles-within-a-space',
     video1: 'https://vimeo.com/363972171',
     video1image: {
-      alt: 'Particles Within a Space, 2017. Andrés Stephanou - Galeria Palácio',
+      alt: 'Chaos, 2017. Andrés Stephanou - Galeria Palácio',
       class: 'videoImg',
       src:'microparticulas/Microparticles-video-screenshot-1.png'
     },  
     images: [
       {
-        alt: 'Particles Within a Space, 2017. Andrés Stephanou - Galeria Palácio',
+        alt: 'Chaos, 2017. Andrés Stephanou - Galeria Palácio',
         src: 'microparticulas/Microparticles-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
       },
       {
-        alt: 'Particles Within a Space, 2017. Andrés Stephanou - Galeria Palácio',
+        alt: 'Chaos, 2017. Andrés Stephanou - Galeria Palácio',
         src: 'microparticulas/Particles-Within-a-Space-2016-17-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
       }
     ]
   },
   {
     image: 'exhibitions/thumbnails/Pattern-Formation-2015-17-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
-    name: 'Pattern Formation',
+    name: 'Particles',
     paragraph1: 'patternp1',
     paragraph2: 'patternp2',
     paragraph3: 'patternp3',
@@ -178,20 +182,20 @@ export const exhibitionsList = [
     pressRelease: 'null',
     video1: 'https://vimeo.com/418210254',
     video1image: {
-      alt: 'Pattern Formation, 2020. Andrés Stephanou - Galeria Palácio',
+      alt: 'Particles, 2020. Andrés Stephanou - Galeria Palácio',
       class: 'videoImg',
       src:'pattern/Pattern-Formation-2015-17-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
     },  
     images: [
       {
-        alt: 'Pattern Formation, 2017. Andrés Stephanou - Galeria Palácio',
+        alt: 'Particles, 2017. Andrés Stephanou - Galeria Palácio',
         src: 'pattern/Pattern-Formation-2015-17-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
       }
     ]
   },
   {
     image: 'exhibitions/network/Network-Paths-2015-19-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
-    name: 'Network Paths',
+    name: 'Network',
     paragraph1: 'networkp1',
     paragraph2: 'networkp2',
     paragraph3: 'networkp3',
@@ -200,13 +204,13 @@ export const exhibitionsList = [
     pressRelease: 'null',
     video1: 'https://vimeo.com/428869522',
     video1image: {
-      alt: 'Network Paths, 2019. Andrés Stephanou',
+      alt: 'Network, 2019. Andrés Stephanou',
       class: 'videoImg',
       src:'network/Network-Paths-2015-19-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
     },  
     images: [
       {
-        alt: 'Network Paths, 2019. Andrés Stephanou',
+        alt: 'Network, 2019. Andrés Stephanou',
         src: 'network/Network-Paths-2015-19-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
       }
     ]
@@ -232,5 +236,49 @@ export const exhibitionsList = [
         src: 'colonies/Colonies-2015-19-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
       }
     ]
-  }
+  },
+  {
+    image: 'exhibitions/Swarming/Swarming-2012-14-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
+    name: 'Swarming',
+    paragraph1: 'swarmingp1',
+    paragraph2: 'swarmingp2',
+    paragraph3: 'swarmingp3',
+    period: '(2012–14)',
+    route: 'swarming',
+    pressRelease: 'null',
+    video1: 'https://vimeo.com/463178255',
+    video1image: {
+      alt: 'Swarming, 2012-14. Andrés Stephanou - Galeria Palácio',
+      class: 'videoImg',
+      src:'Swarming/Swarming-2012-14-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
+    },
+    images: [
+      {
+        alt: 'Swarming, 2012-14. Andrés Stephanou - Galeria Palácio',
+        src: 'Swarming/Swarming-2012-14-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
+      }
+    ] 
+  },
+  {
+    image: 'exhibitions/Swarming (Zoom Out)/Swarming-(Zoom-Out)-2012-14-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
+    name: 'Swarming (Zoom Out)',
+    paragraph1: 'swarmingZoomp1',
+    paragraph2: 'swarmingZoomp2',
+    paragraph3: 'swarmingZoomp3',
+    period: '(2012–14)',
+    route: 'swarming-zoom-out',
+    pressRelease: 'null',
+    video1: 'https://vimeo.com/463174418',
+    video1image: {
+      alt: 'Swarming (Zoom Out), 2012-14. Andrés Stephanou - Galeria Palácio',
+      class: 'videoImg',
+      src:'Swarming (Zoom Out)/Swarming-(Zoom-Out)-2012-14-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
+    },
+    images: [
+      {
+        alt: 'Swarming (Zoom Out), 2012-14. Andrés Stephanou - Galeria Palácio',
+        src: 'Swarming (Zoom Out)/Swarming-(Zoom-Out)-2012-14-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
+      }
+    ] 
+  },
 ]

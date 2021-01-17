@@ -4,19 +4,15 @@ import { I18nContext } from '../i18n'
 
 const ContactWrapper = styled.div`
   align-items: flex-start;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 14px;
   justify-content: center;
-  left: 0;
   margin: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 250px;
+  max-width: 50%;
+  padding-top: 250px;
 
   span, h2 {
     display: block;
@@ -24,8 +20,13 @@ const ContactWrapper = styled.div`
   }
 
   .artistInfo {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     text-align: left;
+    max-width: 60%;
+
+    span {
+      padding: 6px 0;
+    }
 
     @media (max-width: 520px) {
       padding-left: 15px;
@@ -71,6 +72,18 @@ const ContactWrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  .emailContainer {
+    padding-bottom: 100px;
+  }
+
+  .aboutTextContainer {
+    padding-bottom: 100px;
+    p {
+      margin: auto;
+      padding: 4px 0;
+    }
+  }
 `
 
 function Contact( props ) {
@@ -86,10 +99,15 @@ function Contact( props ) {
           {translate('birth')}
         </span>
       </div>
-      <section>
+      <section className="emailContainer">
         <div className="flex">
           <a className="mail" href="mailto:contact@andres-stephanou.com" target="_top">contact@andres-stephanou.com</a>
         </div>
+      </section>
+      <section className="aboutTextContainer">
+        <p>{translate('aboutp1')}</p>
+        <p>{translate('aboutp2')}</p>
+        <p>{translate('aboutp3')}</p>
       </section>
     </ContactWrapper>
   )
